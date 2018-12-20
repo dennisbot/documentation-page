@@ -1,13 +1,37 @@
-@media only screen
-    and (min-device-width: 1200px)
-    and (max-device-width: 1920px)
-    {
-
-    body {
-        display: flex;
-    }
-
-    #navbar {
-        order: -1;
-    }
+html, body {
+  font-size: 16px;
 }
+
+nav {
+  width: 15rem;
+}
+
+.nav-link {
+  display: block;
+  background: #ffff77;
+  padding: 4px 10px;
+  border: 1px solid brown;
+}
+
+#main-doc {
+  width: 100%;
+  margin: 10px 8px;
+  background: whitesmoke;
+  padding: 0 12px;
+}
+
+
+@media only screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1920px)
+  {
+
+  body {
+    display: flex;
+  }
+
+  #navbar {
+    order: -1;
+  }
+}
+
