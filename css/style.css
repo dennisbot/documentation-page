@@ -1,0 +1,13 @@
+@media only screen
+    and (min-device-width: 1200px)
+    and (max-device-width: 1920px)
+    {
+
+    body {
+        display: flex;
+    }
+
+    #navbar {
+        order: -1;
+    }
+}
