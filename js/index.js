@@ -28,12 +28,11 @@ INSTRUCTIONS:
 "use strict";
 function setDocPanelWidth() {
   const navContainer = document.getElementById("nav-container");
-    document.getElementById("navbar").style.width = navContainer.offsetWidth + "px";
+  document.getElementById("navbar").style.top = window.pageYOffset + "px";
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  setDocPanelWidth();
-  window.addEventListener("resize", function() {
+  window.addEventListener("scroll", function() {
     setDocPanelWidth();
   })
 })

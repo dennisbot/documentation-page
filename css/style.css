@@ -1,5 +1,7 @@
 html, body {
   font-size: 16px;
+  width: 100%;
+  margin: 0;
 }
 
 body {
@@ -10,6 +12,7 @@ body {
 
 #nav-container {
   width: 100%;
+  position: relative;
 }
 
 #navbar {
