@@ -1,102 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Ruby on Rails Documentation</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
+</head>
 
-  <body>
-   <nav id="navbar">
-       <header>Topic Tech Doc</header>
-       <a href="#Introduction" class="nav-link">Introduction</a>
-       <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
-       <a href="#Ruby" class="nav-link">Ruby</a>
-       <a href="#Ruby_on_Rails" class="nav-link">Ruby on Rails</a>
-       <a href="#My_first_app_with_RoR" class="nav-link">My first app with RoR</a>
-   </nav>
-   <main id="main-doc">
-       <section class="main-section" id="Introduction">
-          <header>Introduction</header>
-          <p>
-              1
-          </p>
-          <ul>
-            <li>1st item</li>
-            <li>2nd item</li>
-          </ul>
-       </section>
-       <section class="main-section" id="What_you_should_already_know">
-        <header>What you should already know</header>
-          <p>
-              2
-          </p>
-          <p>
-              3
-          </p>
-          <code>alert('Hello 1')</code>
-       </section>
-       <section class="main-section" id="Ruby">
-          <header>Ruby</header>
-          <p>
-              4
-          </p>
-          <p>
-              5
-          </p>
-          <p>
-              6
-          </p>
-          <ul>
-            <li>3th item</li>
-          </ul>
-          <code>alert('Hello 2')</code>
-          <code>alert('Hello 3')</code>
-       </section>
-       <section class="main-section" id="Ruby_on_Rails">
-          <header>Ruby on Rails</header>
-          <p>
-              7
-          </p>
-          <p>
-              8
-          </p>
-          <p>
-              9
-          </p>
-          <p>
-              10
-          </p>
-          <code>alert('Hello 4')</code>
-       </section>
-       <section class="main-section" id="My_first_app_with_RoR">
-          <header>My first app with RoR</header>
-          <p>
-              11
-          </p>
-          <p>
-              12
-          </p>
-          <ul>
-            <li>4th item</li>
-            <li>5th item</li>
-          </ul>
-          <code>alert('Hello 5')</code>
-       </section>
-   </main>
-   <style>
-     @media only screen
-      and (min-width: 815px) {
+<body>
+    <nav id="navbar">
+        <header>Ruby on Rails Documentation</header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
+            <li><a href="#Ruby" class="nav-link">Ruby</a></li>
+            <li><a href="#Ruby_on_Rails" class="nav-link">Ruby on Rails</a></li>
+            <li><a href="#My_first_app_with_RoR" class="nav-link">My first app with RoR</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header><span>Introduction</span><img src="https://guides.rubyonrails.org/images/rails_guides_logo.gif" alt="ruby on rails logo"></header>
+                <p>
+                    Ruby is an object-oriented programming language developed by Yukihiro Matsumoto. Ruby is a dynamic programming language with a complex but at the same time expressive grammar. Ruby also has a core class library with a rich and powerful API.
+                </p>
+                <p>Features</p>
+                <ul>
+                    <li>Ruby is an open-source and is freely available on the Web, but it is subject to a license.</li>
+                    <li>Ruby is a general-purpose, interpreted programming language.</li>
+                </ul>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <p>
+                Basic programming knowledge is required along with good skills at solving algorithm problem.
+            </p>
+            <p>
+                example:
+            </p>
+            <code>print "Hello, World!\n"</code>
+        </section>
+        <section class="main-section" id="Ruby">
+            <header>Ruby</header>
+            <p>
+                MacOS comes with Ruby already installed. Most Linux distributions either come with Ruby preinstalled or allow you to easily install Ruby from the distribution's repository of free software. You can also download and install Ruby on Windows. The more technically adept can download the Ruby source code and compile it for most operating systems, including Unix, DOS, BeOS, OS/2, Windows, and Linux.
+            </p>
+            <p>
+                Ruby goes to great lengths to be a purely object oriented language. Every value in Ruby is an object, even the most primitive things: strings, numbers and even true and false. Every object has a class and every class has one superclass. At the root of the class hierarchy is the class BasicObject, from which all other classes, including Object, inherit.
+            </p>
+            <p>
+                Every class has a set of methods which can be called on objects of that class. Methods are always called on an object — there are no “class methods”, as there are in many other languages (though Ruby does a great job at faking them).
+            </p>
+            <ul>
+                <li>3th item</li>
+            </ul>
+            <code>
+              <pre>
+    # Simple for loop using a range.
+    for i in (1..4)
+        print i," "
+    end
+    print "\n"
+
+    for i in (1...4)
+        print i," "
+    end
+    print "\n"
+              </pre>
+            </code>
+            <code>
+              <pre>
+  # Running through a list (which is what they do).
+  items = [ 'Mark', 12, 'goobers', 18.45 ]
+  for it in items
+    print it, " "
+  end
+  print "\n"
+              </pre>
+            </code>
+        </section>
+        <section class="main-section" id="Ruby_on_Rails">
+            <header>Ruby on Rails</header>
+            <p>
+                Ruby on Rails, or Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages. It encourages and facilitates the use of web standards such as JSON or XML for data transfer, HTML, CSS and JavaScript for user interfacing. In addition to MVC, Rails emphasizes the use of other well-known software engineering patterns and paradigms, including convention over configuration (CoC), don't repeat yourself (DRY), and the active record pattern.
+            </p>
+            <p>
+                Ruby on Rails' emergence in the 2000s greatly influenced web app development, through innovative features such as seamless database table creations, migrations, and scaffolding of views to enable rapid application development. Ruby on Rails' influence on other web frameworks remains apparent today, with many frameworks in other languages borrowing its ideas, including Django in Python, Catalyst in Perl, Laravel in PHP, Phoenix in Elixir, and Sails.js in Node.js.
+            </p>
+            <p>
+                Ruby on Rails is open source software, so not only is it free to use, you can also help make it better. More than 4,500 people already have contributed code to Rails. It’s easier than you think to become one of them.
+            </p>
+            <p>
+                Optimizing for programmer happiness with Convention over Configuration is how we roll. Ruby on Rails has been popularizing both concepts along with a variety of other controversial points since the beginning. To learn more about why Rails is so different from many other web-application frameworks and paradigms, examine The Rails Doctrine.
+            </p>
+            <code>$ rails generate initializer core_extensions</code>
+        </section>
+        <section class="main-section" id="My_first_app_with_RoR">
+            <header>My first app with RoR</header>
+            <p>
+                The best way to read this guide is to follow it step by step. All steps are essential to run this example application and no additional code or steps are needed.
+            </p>
+            <p>
+                By following along with this guide, you'll create a Rails project called blog, a (very) simple weblog. Before you can start building the application, you need to make sure that you have Rails itself installed.
+            </p>
+            <ul>
+                <li>Say "Hello", Rails</li>
+                <li>Setting the Application Home Page</li>
+            </ul>
+            <code>
+              <pre>
+    Rails.application.routes.draw do
+      get 'welcome/index'
+     
+      # For details on the DSL available within this file, 
+      see http://guides.rubyonrails.org/routing.html
+    end
+              </pre>
+            </code>
+        </section>
+    </main>
+    <style>
+    @media only screen and (min-width: 815px) {
         body {
-          flex-direction: row;
+            flex-direction: row;
         }
+
         #main-doc {
-          margin: 0 12px;
+            margin: 0 12px;
         }
-      }
-   </style>
+    }
+    </style>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script  src="js/index.js"></script>
-  </body>
+    <script src="js/index.js"></script>
+</body>
+
 </html>

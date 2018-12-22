@@ -5,7 +5,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background: whitesmoke;
+  background: white;
 }
 
 nav {
@@ -13,27 +13,52 @@ nav {
 }
 
 #navbar header {
-  background: #ffff77;
   text-align: center;
-  padding: 8px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+#navbar ul {
+  border: 1px groove #eeeeee;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
+  color: #070707;
   display: block;
-  background: #ffff77;
   padding: 4px 10px;
-  border: 1px solid brown;
+  border: 1px solid #e4e4e4;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  background: #e0e01e;
+  background: whitesmoke;
 }
 
 #main-doc {
   width: 100%;
-  background: whitesmoke;
+  background: white;
 }
+
 .main-section {
   padding: 8px;
+}
+
+.main-section header {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: whitesmoke;
+  padding: 8px 0;
+}
+
+pre {
+  overflow: scroll;
+}
+
+img {
+  width: 100%;
 }
