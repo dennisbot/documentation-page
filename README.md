@@ -1,4 +1,3 @@
-# FCC Test Suite Template
+# Technical Documentation page
 
-Fork this project to start working on any of freeCodeCamp's responsive web design course projects.
-Select the project from the dropdown menu and run the tests to see which requirements your project is still missing.
+final result [dennisbot.github.io/documentation-page](https://dennisbot.github.io/documentation-page/)
