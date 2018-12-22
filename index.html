@@ -9,16 +9,18 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <header>Ruby on Rails Documentation</header>
-        <ul>
-            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
-            <li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
-            <li><a href="#Ruby" class="nav-link">Ruby</a></li>
-            <li><a href="#Ruby_on_Rails" class="nav-link">Ruby on Rails</a></li>
-            <li><a href="#My_first_app_with_RoR" class="nav-link">My first app with RoR</a></li>
-        </ul>
-    </nav>
+    <div id="nav-container">
+        <nav id="navbar">
+            <header>Ruby on Rails Documentation</header>
+            <ul>
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
+                <li><a href="#Ruby" class="nav-link">Ruby</a></li>
+                <li><a href="#Ruby_on_Rails" class="nav-link">Ruby on Rails</a></li>
+                <li><a href="#My_first_app_with_RoR" class="nav-link">My first app with RoR</a></li>
+            </ul>
+        </nav>
+    </div>
     <main id="main-doc">
         <section class="main-section" id="Introduction">
             <header><span>Introduction</span><img src="https://guides.rubyonrails.org/images/rails_guides_logo.gif" alt="ruby on rails logo"></header>
@@ -128,6 +130,10 @@
 
         #main-doc {
             margin: 0 12px;
+        }
+
+        #navbar {
+            position: fixed;
         }
     }
     </style>

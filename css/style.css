@@ -8,8 +8,12 @@ body {
   background: white;
 }
 
-nav {
+#nav-container {
   width: 100%;
+}
+
+#navbar {
+  position: static;
 }
 
 #navbar header {
