@@ -26,13 +26,13 @@ INSTRUCTIONS:
 
 // Once you have read the above messages, you can delete all comments. 
 "use strict";
-function setDocPanelWidth() {
+function updateTop() {
   const navContainer = document.getElementById("nav-container");
   document.getElementById("navbar").style.top = window.pageYOffset + "px";
 }
 
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", function() {
-    setDocPanelWidth();
+    updateTop();
   })
 })
