@@ -2,8 +2,20 @@ html, body {
   font-size: 16px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+}
+
 nav {
-  width: 15rem;
+  width: 100%;
+}
+
+#navbar header {
+  background: #ffff77;
+  text-align: center;
+  padding: 8px;
 }
 
 .nav-link {
@@ -11,27 +23,17 @@ nav {
   background: #ffff77;
   padding: 4px 10px;
   border: 1px solid brown;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: #e0e01e;
 }
 
 #main-doc {
   width: 100%;
-  margin: 10px 8px;
   background: whitesmoke;
-  padding: 0 12px;
 }
-
-
-@media only screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1920px)
-  {
-
-  body {
-    display: flex;
-  }
-
-  #navbar {
-    order: -1;
-  }
+.main-section {
+  padding: 8px;
 }
-
